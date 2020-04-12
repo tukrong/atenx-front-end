@@ -1,6 +1,10 @@
 # Application Title: A Description
 An app intended for personal trainer to keep track of their clients. Helps to keep track of their workouts.
 
+## Instruction
+- First run npm install
+- Then run grunt serve to run local server
+
 ## Important Links
 
 - [Deployed API] https://dashboard.heroku.com/apps/mighty-brook-13806
@@ -48,6 +52,8 @@ API: https://github.com/tukrong/api-atenx
 - Future design will be included in my wire frames.
 - Design for it to look minimal
 - Use React to create the app
+- Create another resource so that clients can keep track of their fitness goals.
+- Design more and plan better.
 
 ## Images
 ![](https://github.com/tukrong/atenx-client/blob/master/HomePage.png)
