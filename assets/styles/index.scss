@@ -1,0 +1,17 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+.navbar {
+  background:#6ab446;
+}
+.navbar-brand {
+  color: #fff;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}

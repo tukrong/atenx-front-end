@@ -1,0 +1,45 @@
+{{#each clients as |client|}}
+ <section data-id="{{client.id}}">
+   <h3>
+     {{client.data}}
+   </h3>
+   <p> Client ID:
+     {{#if client.id}}
+       {{client.id}}
+     {{else}}
+       No data provided.
+     {{/if}}
+   </p>
+   <p> Name:
+     {{#if client.name}}
+       {{client.name}}
+     {{else}}
+       No data provided.
+     {{/if}}
+   </p>
+   <p> Age:
+     {{#if client.age}}
+       {{client.age}}
+     {{else}}
+       No data provided.
+     {{/if}}
+   </p>
+   <p> Description:
+     {{#if client.description}}
+       {{client.description}}
+     {{else}}
+       No data provided.
+     {{/if}}
+   </p>
+   <p> Duration:
+     {{#if client.duration}}
+       {{client.duration}}
+     {{else}}
+       No data provided.
+     {{/if}}
+   </p>
+   <!-- <button data-id="{{client.id}}" class="btn btn-primary update-client" data-toggle="modal" data-target="update-modal">update client</button> -->
+   <button data-id="{{client.id}}" class="btn btn-danger remove-client">Remove client</button>
+ </section>
+
+{{/each}}
