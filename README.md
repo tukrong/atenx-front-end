@@ -2,8 +2,8 @@
 An app intended for personal trainer to keep track of their clients. Helps to keep track of their workouts.
 
 ## Instruction
-- First run npm install
-- Then run grunt serve to run local server
+- First run `npm install`
+- Then run `grunt serve` to run local server
 
 ## Deployed Links
 
@@ -48,6 +48,7 @@ API: https://github.com/tukrong/api-atenx
 - Have the nav bar on top.
 - Have a table to list all of the clients
 - Be able to add modal pop up forms
+- Have the view all clients to display in rows
 
 ### Future planning
 - Future design will be included in my wire frames.
@@ -56,7 +57,7 @@ API: https://github.com/tukrong/api-atenx
 - Create another resource so that clients can keep track of their fitness goals.
 - Design more and plan better.
 
-## Images
+## Wireframe
 ![](https://github.com/tukrong/atenx-client/blob/master/HomePage.png)
 ![](https://github.com/tukrong/atenx-client/blob/master/create%20page.png)
 
