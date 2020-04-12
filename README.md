@@ -5,13 +5,14 @@ An app intended for personal trainer to keep track of their clients. Helps to ke
 - First run npm install
 - Then run grunt serve to run local server
 
-## Important Links
+## Deployed Links
 
 - [Deployed API] https://dashboard.heroku.com/apps/mighty-brook-13806
 - [Deployed Client] https://tukrong.github.io/atenx-client/
 
-GitHub repo-
+## GitHub repo-
 AtenX-front-end: https://github.com/tukrong/atenx-client
+
 API: https://github.com/tukrong/api-atenx
 
 ## Planning Story
