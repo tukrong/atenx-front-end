@@ -3,7 +3,7 @@
 ## Important Links
 
 - [Deployed API]
-- [Deployed Client]
+- [Deployed Client] https://tukrong.github.io/atenx-client/
 
 GitHub repo-
 -
