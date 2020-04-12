@@ -50,4 +50,4 @@ API: https://github.com/tukrong/api-atenx
 - Use React to create the app
 
 ## Images
-![](/createpage.png)
+![](https://github.com/tukrong/atenx-client/blob/master/create%20page.png)
