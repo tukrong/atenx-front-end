@@ -1,12 +1,14 @@
 # Application Title: A Description
+An app intended for personal trainer to keep track of their clients. Helps to keep track of their workouts.
 
 ## Important Links
 
-- [Deployed API]
+- [Deployed API] https://dashboard.heroku.com/apps/mighty-brook-13806
 - [Deployed Client] https://tukrong.github.io/atenx-client/
 
 GitHub repo-
--
+AtenX-front-end: https://github.com/tukrong/atenx-client
+API: https://github.com/tukrong/api-atenx
 
 ## Planning Story
 
