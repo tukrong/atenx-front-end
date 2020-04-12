@@ -63,40 +63,52 @@
       <div class="row">
         <div class="col-6 col-md-4">
           <form id='client'>
-            <p>Log Exercise</p>
-            <input id='name' name='client[name]' type='text' placeholder='Name'>
-            <input id='age' name='client[age]' type='text' placeholder='Age'>
-            <input id='description'name='client[description]' type='text' placeholder='Description'>
-            <input id='duration' name='client[duration]' type='text' placeholder='Duration'>
-            <input type='submit' value='submit'>
+            <legend>Client</legend>
+            <div class="form-group">
+              <input id='name' name='client[name]' type='text' placeholder='Name' class="form-control">
+              <input id='age' name='client[age]' type='text' placeholder='Age' class="form-control">
+              <input id='description'name='client[description]' type='text' placeholder='Description' class="form-control">
+              <input id='duration' name='client[duration]' type='text' placeholder='Duration' class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
         <div class="col-6 col-md-4">
           <form id='clientUpdate'>
-            <p>Update Client</p>
-            <input id='clientID1' name='client[id]' type='text' placeholder='Id'>
-            <input id='name1' name='client[name]' type='text' placeholder='Name'>
-            <input id='age1' name='client[age]' type='text' placeholder='Age'>
-            <input id='description1'name='client[description]' type='text' placeholder='Description'>
-            <input id='duration1' name='client[duration]' type='text' placeholder='Duration'>
-            <input type='submit' value='submit'>
+            <legend>Update Client</legend>
+            <div class="form-group">
+              <input id='clientID1' name='client[id]' type='text' placeholder='Id' class='form-control'>
+              <input id='name1' name='client[name]' type='text' placeholder='Name' class='form-control'>
+              <input id='age1' name='client[age]' type='text' placeholder='Age' class='form-control'>
+              <input id='description1'name='client[description]' type='text' placeholder='Description' class='form-control'>
+              <input id='duration1' name='client[duration]' type='text' placeholder='Duration' class='form-control'>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
         <div class="col-6 col-md-4">
           <form class="changePw" id='change-password'>
+            <legend>Change Password</legend>
+            <div class="form-group">
+              <input name='passwords[old]' type='password' placeholder='old password' class='form-control'>
+              <input name='passwords[new]' type='password' placeholder='new password' class='form-control'>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <!-- <form class="changePw" id='change-password'>
             <fieldset>
               <p>Change password</p>
                 <input name='passwords[old]' type='password' placeholder='old password'>
                 <input name='passwords[new]' type='password' placeholder='new password'>
                 <input type='submit' value='change password'>
             </fieldset>
-          </form>
+          </form> -->
         </div>
       </div>
 
 
         <form id='sign-out'>
-              <input type='submit' value='Sign out'>
+              <button type='submit' class="btn btn-danger">Sign Out</button>
         </form>
         <br>
 
@@ -104,7 +116,7 @@
         <br>
         <div id="clientsButtonHide">
             <nav>
-              <div class="clients">Fitness App</div>
+              <div class="clients">View All</div>
               <div class="nav-buttons">
                 <button id="getClientsButton" class="btn btn-info mr-2">Get clients</button>
                 <button id="clearClientsButton" class="btn btn-info mr-2">Clear clients</button>
