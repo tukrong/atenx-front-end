@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Fitness App</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">ATenX Fitness App</a>
+
+  </nav>
+      <p id='message'></p>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <form class='sign-up-form' id='sign-up'>
+              <legend>Sign up</legend>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input name='credentials[email]' type='email' placeholder='email@email.com' class="form-control" >
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input name='credentials[password]' type='password' placeholder='password' class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input name='credentials[password_confirmation]' type='password' placeholder='password' class="form-control">
+              </div>
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+          </div>
+        </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <form class='sign-in-form' id='sign-in'>
+                  <legend>Sign in</legend>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input name='credentials[email]' type='email' placeholder='email@email.com' class="form-control" >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input name='credentials[password]' type='password' placeholder='password' class="form-control">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Sign In</button>
+                </form>
+              </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-6 col-md-4">
+          <form id='client'>
+            <legend>Client</legend>
+            <div class="form-group">
+              <input id='name' name='client[name]' type='text' placeholder='Name' class="form-control">
+              <input id='age' name='client[age]' type='text' placeholder='Age' class="form-control">
+              <input id='description'name='client[description]' type='text' placeholder='Description' class="form-control">
+              <input id='duration' name='client[duration]' type='text' placeholder='Duration' class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-6 col-md-4">
+          <form id='clientUpdate'>
+            <legend>Update Client</legend>
+            <div class="form-group">
+              <input id='clientID1' name='client[id]' type='text' placeholder='Id' class='form-control'>
+              <input id='name1' name='client[name]' type='text' placeholder='Name' class='form-control'>
+              <input id='age1' name='client[age]' type='text' placeholder='Age' class='form-control'>
+              <input id='description1'name='client[description]' type='text' placeholder='Description' class='form-control'>
+              <input id='duration1' name='client[duration]' type='text' placeholder='Duration' class='form-control'>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-6 col-md-4">
+          <form class="changePw" id='change-password'>
+            <legend>Change Password</legend>
+            <div class="form-group">
+              <input name='passwords[old]' type='password' placeholder='old password' class='form-control'>
+              <input name='passwords[new]' type='password' placeholder='new password' class='form-control'>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <!-- <form class="changePw" id='change-password'>
+            <fieldset>
+              <p>Change password</p>
+                <input name='passwords[old]' type='password' placeholder='old password'>
+                <input name='passwords[new]' type='password' placeholder='new password'>
+                <input type='submit' value='change password'>
+            </fieldset>
+          </form> -->
+        </div>
+      </div>
+
+
+        <form id='sign-out'>
+              <button type='submit' class="btn btn-danger">Sign Out</button>
+        </form>
+        <br>
+
+
+        <br>
+        <div id="clientsButtonHide">
+            <nav>
+              <div class="clients">View All</div>
+              <div class="nav-buttons">
+                <button id="getClientsButton" class="btn btn-info mr-2">Get clients</button>
+                <button id="clearClientsButton" class="btn btn-info mr-2">Clear clients</button>
+            </div>
+          <main>
+              <div id="content" class="content">
+                <p class="allClient"></p>
+              </div>
+          </main>
+        </nav>
+      </div>
+
+        <!-- <div class="modalFade" id="update-modal" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="false">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <form id="client-form">
+              <fieldset>
+                  <p>Update route</p>
+                  <input id='routeNameUpdate' name='client[route_name]' type='text' placeholder='Route name'>
+                  <br>
+                  <input id='routeGradeUpdate' name='client[route_grade]' type='text' placeholder='Route grade'>
+                  <br>
+                  <input id='numberTriedUpdate'name='client[number_of_tries]' type='text' placeholder='Number of tries'>
+                  <br>
+                  <input id='didSendUpdate' name='client[did_send]' type='text' placeholder='send?'>
+                  <button id='update-button'>submit</button>
+                </fieldset>
+              </form>
+          </div>
+        </div>
+      </div> -->
+
+    </body>
+</html>
