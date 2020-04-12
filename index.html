@@ -14,8 +14,7 @@
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand">Fitness App</a>
-    <a class="testing1">Run!!</a>
+    <a class="navbar-brand">ATenX Fitness App</a>
 
   </nav>
       <p id='message'></p>
@@ -23,30 +22,40 @@
         <div class="row">
           <div class="col">
             <form class='sign-up-form' id='sign-up'>
-              <fieldset class='sign-up-form'>
-                <legend>Sign up</legend>
-                <input name='credentials[email]' type='email' placeholder='email@email.com' >
-                <br>
-                <input name='credentials[password]' type='password' placeholder='password'>
-                <br>
-                <input name='credentials[password_confirmation]' type='password' placeholder='password'>
-                <br>
-                <input type='submit' value='sign up' >
-              </fieldset>
+              <legend>Sign up</legend>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input name='credentials[email]' type='email' placeholder='email@email.com' class="form-control" >
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input name='credentials[password]' type='password' placeholder='password' class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input name='credentials[password_confirmation]' type='password' placeholder='password' class="form-control">
+              </div>
+              <button type="submit" class="btn btn-primary">Sign Up</button>
             </form>
           </div>
-          <div class="col">
-            <form class='sign-in-form' id='sign-in'>
-              <fieldset>
-                <legend>Sign in here</legend>
-                  <input name='credentials[email]' type='email' placeholder='example@example.com'>
-                  <br>
-                  <input name='credentials[password]' type='password' placeholder='password'>
-                  <br>
-                  <input type='submit' value='sign in'>
-              </fieldset>
-            </form>
+        </div>
           </div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <form class='sign-in-form' id='sign-in'>
+                  <legend>Sign in</legend>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input name='credentials[email]' type='email' placeholder='email@email.com' class="form-control" >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input name='credentials[password]' type='password' placeholder='password' class="form-control">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Sign In</button>
+                </form>
+              </div>
         </div>
       </div>
 
